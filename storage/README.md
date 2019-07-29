@@ -11,9 +11,11 @@
 
 ### Create a Bucket
 > gsutil mb -p <project_id> -c <class> -l <localtion> -b <bucket_acl> gs://<bucket_name>/
-  OR
+
+OR
 > gsutil mb -c <class> -l <localtion> -b <bucket_acl> gs://<bucket_name>/
-  OR
+
+OR
 > gsutil mb gs://<bucket_name>/
   
 
