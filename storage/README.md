@@ -34,3 +34,21 @@ $ gsutil mb -p my-gcp-project -c regional -l asia-south1 -b off gs://g-cloud-sto
 ```sh
 $ gsutil mb -p my-gcp-project -c regional --retention 6m -l asia-south1 -b off gs://g-cloud-storage/
 ```
+
+### Copy data to/from a Cloud Storage Bucket
+#### Copy Local file to bucket
+> gsutil cp <path_of_data_to_copy/file.extension>  gs://<target_bucket_name>/<[optional]path>
+
+OR
+#### Download file from GS bucket to local file system
+> gsutil cp   gs://<target_bucket_name>/<[optional]path_to_copy> <local_path_to_download_data_to>
+
+OR
+#### Copy directory content to GS Bucket -r for Recursive
+> gsutil -m cp -r </local_path_to_download_data_to/subdir>  gs://<target_bucket_name>/<[optional]path_to_copy>
+
+#### Copy sub-directory content to GS Bucket 
+> gsutil -m cp </local_path_to_diredownload_data_to/subdir/** >  gs://<target_bucket_name>/<[optional] path_to_copy>
+
+
+
